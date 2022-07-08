@@ -1,13 +1,173 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap');
+@import "bootstrap.css";
+@import "owl.carousel.css";
+@import "owl.theme.default.css";
 
 $readex_pro_font: 'Readex Pro', sans-serif;
 $inter_font: 'Inter', sans-serif;
 $black_color:#000000;
+$white_color: #ffffff;
 $swamp_color:#DCE5E2;
 $light_swamp_color:#F8F9FA;
 
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
     @content;
+  }
+}
+
+header {
+  z-index: 3;
+  .container {
+    max-width: 1294px;
+    padding: 0;
+  }
+  .navbar.navbar-expand-lg.navbar-light.align-items-center {
+    padding: 28px 30px 28px 0;
+    @include max-screen(991px) {
+      padding: 10px 10px;
+    }
+    .navbar-brand {
+      max-width: 170px;
+      padding: 0;
+      margin: 0;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+    .collapse.navbar-collapse.justify-content-center.align-items-center {
+      .navbar-nav {
+        @include max-screen(991px) {
+          align-items: center;
+          background: $white_color;
+          border-radius: 32px;
+        }
+        .nav-item {
+          .nav-link {
+            font-family: $inter_font;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: $black_color;
+            @include max-screen(991px) {
+              font-size: 24px;
+            }
+          }
+          &:nth-child(1) {
+            margin-right: 33px;
+            @include max-screen(991px) {
+              margin: 18px 0;
+            }
+          }
+          &:nth-child(2) {
+            margin-right: 35px;
+            @include max-screen(991px) {
+              margin-right: 0;
+              margin-bottom: 18px;
+            }
+          }
+          &:nth-child(3) {
+            margin-right: 44px;
+            @include max-screen(991px) {
+              margin-right: 0;
+              margin-bottom: 18px;
+            }
+          }
+          .nav-link.dropdown-toggle {
+            &::after {
+              content: "";
+              display: inline-block;
+              background-image: url("../img/chevron_down.svg");
+              width: 12px;
+              height: 7px;
+              border: none;
+              margin-left: 4px;
+              vertical-align: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .search {
+    margin-right: 27px;
+    max-width: 24px;
+    @include max-screen(991px) {
+      display: none;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .shopping_cart {
+    max-width: 24px;
+    @include max-screen(991px) {
+      display: none;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+.phones_banner {
+  padding-top: 108px;
+  padding-bottom: 75px;
+  .container {
+    max-width: 1294px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: $swamp_color;
+    border-radius: 32px;
+    .col {
+      padding: 145px 0 141px 56px;
+      background-image: url("/img/3iphones.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      h1 {
+        @include max-screen(1130px) {
+          color: $white_color;
+          font-size: 38px;
+          line-height: 110%;
+        }
+        max-width: 588px;
+        font-family: $readex_pro_font;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 70px;
+        color: $black_color;
+        margin-bottom: 19px;
+      }
+      p {
+        @include max-screen(1130px) {
+          color: $white_color;
+        }
+        max-width: 565px;
+        font-family: $inter_font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $black_color;
+        margin-bottom: 44px;
+      }
+      a {
+        @include max-screen(1130px) {
+          color: $white_color;
+          border: solid 1px white;
+        }
+        font-family: $inter_font;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-decoration: none;
+        color: $black_color;
+        border: solid 1px black;
+        border-radius: 200px;
+        padding: 14px 53px;
+        cursor: pointer;
+      }
+    }
   }
 }

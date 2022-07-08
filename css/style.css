@@ -1,3 +1,134 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap");
+@import url(bootstrap.css);
+@import url(owl.carousel.css);
+@import url(owl.theme.default.css);
+header {
+  z-index: 3; }
+  header .container {
+    max-width: 1294px;
+    padding: 0; }
+  header .navbar.navbar-expand-lg.navbar-light.align-items-center {
+    padding: 28px 30px 28px 0; }
+    @media screen and (max-width: 991px) {
+      header .navbar.navbar-expand-lg.navbar-light.align-items-center {
+        padding: 10px 10px; } }
+    header .navbar.navbar-expand-lg.navbar-light.align-items-center .navbar-brand {
+      max-width: 170px;
+      padding: 0;
+      margin: 0; }
+      header .navbar.navbar-expand-lg.navbar-light.align-items-center .navbar-brand img {
+        width: 100%;
+        display: block; }
+    @media screen and (max-width: 991px) {
+      header .navbar.navbar-expand-lg.navbar-light.align-items-center .collapse.navbar-collapse.justify-content-center.align-items-center .navbar-nav {
+        align-items: center;
+        background: #ffffff;
+        border-radius: 32px; } }
+    header .navbar.navbar-expand-lg.navbar-light.align-items-center .collapse.navbar-collapse.justify-content-center.align-items-center .navbar-nav .nav-item .nav-link {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000; }
+      @media screen and (max-width: 991px) {
+        header .navbar.navbar-expand-lg.navbar-light.align-items-center .collapse.navbar-collapse.justify-content-center.align-items-center .navbar-nav .nav-item .nav-link {
+          font-size: 24px; } }
+    header .navbar.navbar-expand-lg.navbar-light.align-items-center .collapse.navbar-collapse.justify-content-center.align-items-center .navbar-nav .nav-item:nth-child(1) {
+      margin-right: 33px; }
+      @media screen and (max-width: 991px) {
+        header .navbar.navbar-expand-lg.navbar-light.align-items-center .collapse.navbar-collapse.justify-content-center.align-items-center .navbar-nav .nav-item:nth-child(1) {
+          margin: 18px 0; } }
+    header .navbar.navbar-expand-lg.navbar-light.align-items-center .collapse.navbar-collapse.justify-content-center.align-items-center .navbar-nav .nav-item:nth-child(2) {
+      margin-right: 35px; }
+      @media screen and (max-width: 991px) {
+        header .navbar.navbar-expand-lg.navbar-light.align-items-center .collapse.navbar-collapse.justify-content-center.align-items-center .navbar-nav .nav-item:nth-child(2) {
+          margin-right: 0;
+          margin-bottom: 18px; } }
+    header .navbar.navbar-expand-lg.navbar-light.align-items-center .collapse.navbar-collapse.justify-content-center.align-items-center .navbar-nav .nav-item:nth-child(3) {
+      margin-right: 44px; }
+      @media screen and (max-width: 991px) {
+        header .navbar.navbar-expand-lg.navbar-light.align-items-center .collapse.navbar-collapse.justify-content-center.align-items-center .navbar-nav .nav-item:nth-child(3) {
+          margin-right: 0;
+          margin-bottom: 18px; } }
+    header .navbar.navbar-expand-lg.navbar-light.align-items-center .collapse.navbar-collapse.justify-content-center.align-items-center .navbar-nav .nav-item .nav-link.dropdown-toggle::after {
+      content: "";
+      display: inline-block;
+      background-image: url("../img/chevron_down.svg");
+      width: 12px;
+      height: 7px;
+      border: none;
+      margin-left: 4px;
+      vertical-align: 1px; }
+  header .search {
+    margin-right: 27px;
+    max-width: 24px; }
+    @media screen and (max-width: 991px) {
+      header .search {
+        display: none; } }
+    header .search img {
+      display: block;
+      width: 100%; }
+  header .shopping_cart {
+    max-width: 24px; }
+    @media screen and (max-width: 991px) {
+      header .shopping_cart {
+        display: none; } }
+    header .shopping_cart img {
+      display: block;
+      width: 100%; }
+
+.phones_banner {
+  padding-top: 108px;
+  padding-bottom: 75px; }
+  .phones_banner .container {
+    max-width: 1294px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #DCE5E2;
+    border-radius: 32px; }
+    .phones_banner .container .col {
+      padding: 145px 0 141px 56px;
+      background-image: url("/img/3iphones.png");
+      background-repeat: no-repeat;
+      background-position: right; }
+      .phones_banner .container .col h1 {
+        max-width: 588px;
+        font-family: "Readex Pro", sans-serif;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 70px;
+        color: #000000;
+        margin-bottom: 19px; }
+        @media screen and (max-width: 1130px) {
+          .phones_banner .container .col h1 {
+            color: #ffffff;
+            font-size: 38px;
+            line-height: 110%; } }
+      .phones_banner .container .col p {
+        max-width: 565px;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        margin-bottom: 44px; }
+        @media screen and (max-width: 1130px) {
+          .phones_banner .container .col p {
+            color: #ffffff; } }
+      .phones_banner .container .col a {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-decoration: none;
+        color: #000000;
+        border: solid 1px black;
+        border-radius: 200px;
+        padding: 14px 53px;
+        cursor: pointer; }
+        @media screen and (max-width: 1130px) {
+          .phones_banner .container .col a {
+            color: #ffffff;
+            border: solid 1px white; } }
 
 /*# sourceMappingURL=style.css.map */
