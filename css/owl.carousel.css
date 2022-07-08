@@ -15,10 +15,8 @@
   z-index: 1; }
 .owl-stage{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 .owl-nav .owl-prev:before{
   content: "";
