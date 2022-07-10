@@ -6,6 +6,7 @@
 $readex_pro_font: 'Readex Pro', sans-serif;
 $inter_font: 'Inter', sans-serif;
 $black_color:#000000;
+$respon_color:#00FF00;
 $white_color: #ffffff;
 $swamp_color:#DCE5E2;
 $light_swamp_color:#F8F9FA;
@@ -128,7 +129,7 @@ header {
       background-position: right;
       h1 {
         @include max-screen(1130px) {
-          color: $white_color;
+          color: $respon_color;
           font-size: 38px;
           line-height: 110%;
         }
@@ -142,7 +143,7 @@ header {
       }
       p {
         @include max-screen(1130px) {
-          color: $white_color;
+          color: $respon_color;
         }
         max-width: 565px;
         font-family: $inter_font;
@@ -154,7 +155,7 @@ header {
       }
       a {
         @include max-screen(1130px) {
-          color: $white_color;
+          color: $respon_color;
           border: solid 1px white;
         }
         font-family: $inter_font;
@@ -171,3 +172,560 @@ header {
     }
   }
 }
+.shop {
+  padding-bottom: 100px;
+  .container {
+    max-width: 1295px;
+    padding: 0;
+    text-align: center;
+    h2 {
+      display: inline-block;
+      padding: 0;
+      margin-bottom: 9px;
+      max-width: 780px;
+      font-family: $readex_pro_font;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 52px;
+      color: $black_color;
+    }
+    p {
+      display: inline-block;
+      padding: 0;
+      margin-bottom: 55px;
+      max-width: 628px;
+      font-family: $readex_pro_font;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: $black_color;
+    }
+    .row {
+      margin: 0;
+      justify-content: space-between;
+      align-items: start;
+      max-width: 1295px;
+      @include max-screen(1295px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      .col-6 {
+        max-width: 639px;
+        padding: 0;
+        text-align: right;
+        @include max-screen(1295px) {
+          margin-bottom: 30px;
+        }
+        .col.true_laptop_col {
+          box-shadow: 7px 7px 7px #DCDCDC, -7px -7px 7px #DCDCDC;
+          padding: 0 42px;
+          margin-bottom: 72px;
+          @include max-screen(1295px) {
+            margin-bottom: 30px;
+          }
+          .true_laptop {
+            max-width: 500px;
+          }
+          .p_laptop {
+            margin: 0;
+            display: block;
+            font-family: $inter_font;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+            color: $black_color;
+          }
+          .h3_laptop {
+            max-width: 192px;
+            display: inline-block;
+            margin: 0;
+            font-family: $readex_pro_font;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            color: $black_color;
+          }
+        }
+        .col.watch_col {
+          box-shadow: 7px 7px 7px #DCDCDC, -7px -7px 7px #DCDCDC;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 42px;
+          .watch_strap {
+            max-width: 381px;
+          }
+          .text_watch_strap {
+            max-width: 128px;
+            .p_watch_strap {
+              margin: 0;
+              font-family: $inter_font;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 19px;
+              color: $black_color;
+            }
+            .h3_watch_strap {
+              margin: 0;
+              font-family: $readex_pro_font;
+              font-weight: 400;
+              font-size: 32px;
+              line-height: 38px;
+              color: $black_color;
+            }
+          }
+        }
+      }
+      .col-6.second {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        @include max-screen(639px) {
+          flex-direction: column;
+          align-items: center;
+        }
+        .col-3.two_phones_col {
+          padding: 144px 0 144px 16px;
+          box-shadow: 7px 7px 7px #DCDCDC, -7px -7px 7px #DCDCDC;
+          max-width: 312px;
+          flex: 0 0 100%;
+          @include max-screen(639px) {
+            margin-bottom: 30px;
+          }
+          .two_phones {
+            max-width: 296px;
+            margin-bottom: 41px;
+          }
+          .p_two_phones {
+            margin: 0;
+            font-family: $inter_font;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+            color: $black_color;
+          }
+          .h3_two_phones {
+            margin: 0;
+            font-family: $readex_pro_font;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            color: $black_color;
+          }
+        }
+        .col-3.tablet_col {
+          padding: 114px 0 115px;
+          box-shadow: 7px 7px 7px #DCDCDC, -7px -7px 7px #DCDCDC;
+          max-width: 312px;
+          flex: 0 0 100%;
+          .p_tablet {
+            margin: 0;
+            display: inline-block;
+            font-family: $inter_font;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+            color: $black_color;
+          }
+          .h3_tablet {
+            display: inline-block;
+            margin: 0 2px 42px;
+            font-family: $readex_pro_font;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            color: $black_color;
+          }
+          .tablet {
+            max-width: 312px;
+          }
+        }
+      }
+    }
+  }
+}
+.most_selled_items {
+  padding-bottom: 74px;
+  .container {
+    max-width: 1295px;
+    padding: 0;
+    .col-12.heading_selled {
+      padding: 0;
+      margin-bottom: 9px;
+      font-family: $readex_pro_font;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 52px;
+      color: $black_color;
+    }
+    p {
+      padding: 0;
+      margin-bottom: 59px;
+      font-family: $readex_pro_font;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      color: $black_color;
+    }
+    .row.msi {
+      margin: 0;
+      justify-content: space-between;
+      @include max-screen(1295px) {
+        flex-wrap: wrap;
+      }
+      .col-3.macbpro13 {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 303px;
+        flex: 0 0 100%;
+        @include max-screen(1295px) {
+          margin-bottom: 30px;
+        }
+        .item_link {
+          text-decoration: none;
+          .macbook13 {
+            margin: 0 auto 37px;
+            max-width: 247px;
+          }
+          .text_macbookpro13 {
+            text-align: left;
+            max-width: 261px;
+            .macbookpro13_title {
+              font-family: $readex_pro_font;
+              font-weight: 400;
+              font-size: 22px;
+              line-height: 28px;
+              color: $black_color;
+              margin-bottom: 9px;
+            }
+            .p_msi {
+              font-family: $inter_font;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 17px;
+              color: #4B4B4B;
+              margin-bottom: 8px;
+            }
+            .p_msi_f {
+              font-family: $inter_font;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 17px;
+              color: #4B4B4B;
+              margin-bottom: 25px;
+            }
+            .pmsi {
+              font-family: $inter_font;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 22px;
+              color: $black_color;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.best_around {
+  padding-bottom: 75px;
+  .container {
+    max-width: 1295px;
+    padding: 0;
+    .h2_around {
+      padding: 0;
+      margin-bottom: 9px;
+      font-family: $readex_pro_font;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 52px;
+      color: $black_color;
+    }
+    .p_around {
+      padding: 0;
+      margin-bottom: 56px;
+      font-family: $readex_pro_font;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      color: $black_color;
+    }
+    .row.bestaround {
+      margin: 0;
+      justify-content: space-between;
+      @include max-screen(1295px) {
+        flex-wrap: wrap;
+      }
+      .col-4.bestitem {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 41px 0 0;
+        margin: 0 auto;
+        max-width: 413px;
+        flex: 0 0 100%;
+        background-color: $light_swamp_color;
+        border-radius: 16px;
+        @include max-screen(1295px) {
+          margin-bottom: 30px;
+          }
+        }
+      .best_descript {
+        margin-bottom: 44px;
+        .p_best {
+          font-family: $readex_pro_font;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 17px;
+          color: $black_color;
+        }
+        .h4_best {
+          font-family: $readex_pro_font;
+          font-weight: 400;
+          font-size: 28px;
+          line-height: 35px;
+          color: $black_color;
+          margin-bottom: 30px;
+        }
+        .a_best {
+          font-family: $inter_font;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          text-decoration: none;
+          color: $black_color;
+          border: solid 1px black;
+          border-radius: 200px;
+          padding: 14px 63px;
+          cursor: pointer;
+        }
+      }
+      .img_watch {
+        max-width: 259px;
+      }
+      .img_bookphonewatch {
+        max-width: 294px;
+      }
+      .img_bookphone {
+        max-width: 355px;
+      }
+    }
+  }
+}
+.ideas {
+  padding-bottom: 75px;
+  .container {
+    max-width: 1295px;
+    padding: 0;
+    .h2_ideas {
+      padding: 0;
+      margin-bottom: 9px;
+      font-family: $readex_pro_font;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 52px;
+      color: $black_color;
+    }
+    .p_ideas {
+      padding: 0;
+      margin-bottom: 56px;
+      font-family: $readex_pro_font;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      color: $black_color;
+    }
+    .row.ideas_cat {
+      margin: 0 0 73px;
+      justify-content: space-between;
+      @include max-screen(1295px) {
+        flex-wrap: wrap;
+      }
+      .col-6.ideas_cat {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 620px;
+        flex: 0 0 100%;
+        @include max-screen(1295px) {
+          margin-bottom: 30px;
+        }
+      }
+      .col-6.ideas_text {
+        padding: 14px 0 114px;
+        margin: 0 auto;
+        max-width: 620px;
+        flex: 0 0 100%;
+        @include max-screen(1295px) {
+          margin-bottom: 30px;
+        }
+        .ideastext {
+          text-align: left;
+          font-family: $inter_font;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 30px;
+          color: $black_color;
+          margin-bottom: 28px;
+        }
+      }
+    }
+    .see_all {
+      text-decoration: none;
+      font-family: $inter_font;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: $black_color;
+      &::after {
+        content: "";
+        display: inline-block;
+        background-image: url("../img/nearrow_bold.svg");
+        width: 25px;
+        height: 25px;
+        margin-left: 7px;
+        vertical-align: -2px;
+      }
+    }
+  }
+}
+.looking {
+  padding-bottom: 19px;
+  .container {
+    max-width: 1295px;
+    padding: 0;
+    .h2_looking {
+      font-family: $readex_pro_font;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 52px;
+      color: $black_color;
+      margin-bottom: 24px;
+    }
+    .input-group {
+      height: 60px;
+      margin: 0 auto;
+      .form-control:focus {
+        background-color: $light_swamp_color;
+      }
+      button {
+        border-radius: 100px 0 0 100px;
+        border: 1px solid #C5C5C5;
+        border-right: none;
+        background-color: #F8F9FA;
+        &:hover img {
+          transform: scale(1.3);
+        }
+      }
+      input {
+        border-radius: 0 100px 100px 0;
+        border: 1px solid #C5C5C5;
+        background-color: $light_swamp_color;
+        border-left: none;
+        font-family: $inter_font;
+      }
+      .form-control {
+        &:focus {
+          border-color: #C5C5C5;
+          box-shadow: none;
+        }
+      }
+    }
+    .chapter {
+      margin: 0 auto 68px;
+      a {
+        margin-right: 5px;
+        padding: 12px 22px;
+        font-family: $inter_font;
+        font-size: 14px;
+      }
+    }
+    .email_search {
+      background-color: $swamp_color;
+      border-radius: 16px;
+      margin: auto;
+      padding: 47px 0 43px;
+      .h3_email {
+        font-family: $readex_pro_font;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 52px;
+        color: $black_color;
+        margin-bottom: 9px;
+      }
+      .p_email {
+        font-family: $inter_font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $black_color;
+        margin-bottom: 14px;
+      }
+      input {
+        font-family: $inter_font;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        border: 1px solid black;
+        border-radius: 54px 0 0 54px;
+        border-right: none;
+        background: $swamp_color;
+        &:active {
+          text-decoration: none;
+          border: none;
+        }
+      }
+      button {
+        border: none;
+        border-radius: 0 200px 200px 0;
+        padding: 16px 33px;
+        background-color: $black_color;
+        .sign_up {
+          font-family: $inter_font;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: $white_color;
+        }
+      }
+    }
+  }
+}
+footer {
+  background-color: $light_swamp_color;
+  .container {
+    max-width: 1295px;
+    padding: 0;
+    .row {
+      .col-md-3.col-lg-3.col-xl-3.mx-auto.mt-3 {
+        p {
+          font-family: $inter_font;
+          font-size: 16px;
+          line-height: 19px;
+          font-weight: 400;
+          color: $black_color;
+        }
+      }
+      h6 {
+        font-family: $readex_pro_font;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 400;
+        color: $black_color;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        font-family: $inter_font;
+        font-size: 17px;
+        line-height: 22px;
+        font-weight: 400;
+        color: $black_color;
+      }
+    }
+  }
+}
+
+
+
+
